@@ -1,0 +1,104 @@
+.home-page {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Default font for body text */
+}
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 0 20px;
+    margin: 0;
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Improve text readability */
+}
+
+.hero-section h1 {
+    font-size: 3rem; /* Increase the size of the heading */
+    font-weight: 700; /* Bold weight for the heading */
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive; /* Decorative font for main heading */
+}
+
+.hero-section p {
+    font-size: 1.5rem; /* Increase the size of the paragraph */
+    font-weight: 400; /* Regular weight for the paragraph */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Body text font */
+}
+
+.content-section {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 75vh; /* 75% of the viewport height */
+    padding: 40px 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    opacity: 0; /* Start with hidden/transparent sections */
+    transform: translateY(50px); /* Start with a slight offset */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    text-align: center; /* Ensure text is centered */
+}
+
+.section.visible {
+    opacity: 1; /* Fully visible sections */
+    transform: translateY(0); /* Reset offset */
+}
+
+.section + .section {
+    border-top: 2px solid #ccc; /* Line between sections */
+}
+
+.menus-section,
+.reservations-section,
+.specials-section {
+    background: linear-gradient(135deg, #d7d7d7 25%, #ffffff 50%, #d7d7d7 75%); /* Shining silver gradient */
+    color: #333;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.section h2 {
+    font-size: 2.5rem; /* Increase the size of section headings */
+    font-weight: 600; /* Semi-bold weight for section headings */
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive; /* Decorative font for section headings */
+}
+
+.section p {
+    font-size: 1.25rem; /* Increase the size of section paragraphs */
+    font-weight: 400; /* Regular weight for section paragraphs */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Body text font */
+}
+
+.reservation-button {
+    background-color: white; /* Set the background color to silver */
+    color: #ff5722;
+    border: 2px solid #ff5722;
+    padding: 10px 20px;
+    font-size: 1.25rem; /* Increase the size of the button text */
+    font-weight: 500; /* Medium weight for the button text */
+    border-radius: 25px; /* Increase border-radius for a more rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px; /* Add space above the button */
+    font-family: 'Montserrat', sans-serif; /* Clean, professional font for buttons */
+}
+
+.reservation-button:hover {
+    background-color: #ff5722;
+    color: white;
+}

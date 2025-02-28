@@ -1,0 +1,49 @@
+.contact-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(139, 0, 0, 0.9);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-section h3 {
+    font-size: 1.8rem;
+  }
+  
+  .contact-section p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+  
+  .contact-section .social-media {
+    margin-top: 20px;
+  }
+  
+  .contact-section .social-media h4 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-section .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-section .social-media ul li {
+    margin: 8px 0;
+  }
+  
+  .contact-section .social-media ul li a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contact-section .social-media ul li a:hover {
+    text-decoration: underline;
+  }
+  

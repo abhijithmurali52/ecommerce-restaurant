@@ -1,0 +1,76 @@
+/* AdminTableReservationList.css */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .booking-table th,
+  .booking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .booking-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .form-header {
+    margin-bottom: 15px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-label {
+    margin-bottom: 10px;
+  }
+  
+  .form-input {
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .current-max {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  

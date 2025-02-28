@@ -1,0 +1,175 @@
+/* AdminDashboard.css */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #343a40;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  transition: width 0.3s;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Allow vertical scrolling */
+  transition: margin-left 0.3s, width 0.3s;
+  height: 100vh; /* Full viewport height */
+}
+.with-sidebar {
+  margin-left: 250px; /* Sidebar width */
+  width: calc(100% - 250px); /* Adjust width accordingly */
+}
+
+.without-sidebar {
+  margin-left: 0;
+  width: 100%;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+.sidebar-toggle:hover {
+  background-color: #e9ecef;
+}
+
+.sidebar-toggle .react-icons {
+  font-size: 20px;
+}
+
+
+.sidebar.hide {
+  width: 0;
+  overflow: hidden;
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%; /* Ensure links take full width */
+  transition: background 0.3s;
+}
+.sidebar a:hover {
+  background-color: #495057;
+}
+
+.sidebar a.active {
+  background-color: #007bff;
+}
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.card p {
+    font-size: 2em;
+    margin: 0;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    /* display: flex;
+    justify-content: center;
+    margin-top: 5rem; */
+    /* align-items: center; */
+    /* text-align: center; */
+}
+.heading-class{
+    background-color: lightgrey;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.plus-button{
+    height: 2rem;
+    float: right;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .modal-body {
+    padding: 2rem;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }

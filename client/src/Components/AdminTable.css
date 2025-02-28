@@ -1,0 +1,65 @@
+.admin-dashboard {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .admin-dashboard h1 {
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .admin-dashboard label {
+    margin-bottom: 15px;
+  }
+  
+  .admin-dashboard input {
+    margin-left: 10px;
+    width: 60px;
+  }
+  
+  .admin-dashboard button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .admin-dashboard button:hover {
+    background-color: #45a049;
+  }
+  
+  .admin-dashboard .seats {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .admin-dashboard .seat {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .admin-dashboard .seat.booked {
+    background-color: #f00;
+    color: #fff;
+  }
+  
+  .admin-dashboard .seat.unbooked {
+    background-color: #0f0;
+  }
+  
+  .admin-dashboard .seat.selected {
+    border: 2px solid #00f;
+  }

@@ -1,0 +1,266 @@
+/* Cart.css */
+
+.heading {
+    text-align: center;
+    font-size: 32px; /* Larger font size for prominence */
+    font-weight: 700; /* Bold font weight for emphasis */
+    color: #444; /* Darker grey for a sleek appearance */
+    margin: 30px 0; /* Generous margin for spacing */
+    padding: 15px; /* Extra padding for a balanced look */
+    border: 2px solid #e0e0e0; /* Subtle border around the heading */
+    border-radius: 10px; /* Fully rounded corners */
+    background: linear-gradient(135deg, #e2e2e2, #ffffff); /* Gradient background for a modern touch */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow for depth */
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+    text-transform: capitalize; /* Capitalized text for a refined look */
+    letter-spacing: 2px; /* Increased letter spacing for clarity */
+  }
+  
+.cart-container {
+    padding: 20px;
+    margin-top: 8rem;
+  }
+  
+  .cart-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  .cart-item .remove-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff0000;
+    font-size: 16px;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+  }
+
+  .history-button{
+    margin-left: 0rem;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .quantity-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .quantity-button:focus {
+    outline: none;
+  }
+  
+  .cart-item-price {
+    text-align: right;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative; /* Ensure the container can accommodate absolute positioning inside */
+  }
+  
+  .left-buttons {
+    display: flex;
+    gap: 10px; /* Adjust the gap between "Back to Menu" and "History" */
+  }
+  
+  .cart-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .cart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .history-button {
+    display: flex; /* Ensure that icon and text are aligned properly */
+    align-items: center; /* Center items vertically */
+  }
+  
+  
+  .empty-cart {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .empty-cart h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .empty-cart p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  /* Enhanced styling for the modal sections */
+/* Section styles */
+.user-details-section,
+.item-details-section {
+  background-color: #ffffff; /* White background for a clean look */
+  padding: 20px; /* Padding for spacing inside */
+  border-radius: 8px; /* Rounded corners for a soft look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space below each section */
+}
+
+/* Headings */
+.user-details-section h5,
+.item-details-section h5 {
+  margin-bottom: 20px; /* Space below heading */
+  font-size: 20px; /* Slightly larger font size */
+  font-weight: 600; /* Slightly bolder font weight */
+  border-bottom: 2px solid #eee; /* Underline for emphasis */
+  padding-bottom: 10px; /* Space below heading */
+}
+
+/* User and item details */
+.user-details-section p,
+.item-details-section p {
+  margin: 5px 0; /* Space between paragraphs */
+  font-size: 16px; /* Adjust font size for readability */
+  color: #555; /* Slightly lighter text color for readability */
+}
+
+.item-details-section .item {
+  margin-bottom: 15px; /* Space between items */
+  padding: 15px; /* Padding inside each item */
+  border: 1px solid #ddd; /* Border around each item */
+  border-radius: 8px; /* Rounded corners for items */
+  background-color: #fafafa; /* Light background for items */
+}
+
+/* List styling */
+.item-details-section ul {
+  padding-left: 0; /* Remove default padding */
+}
+
+.item-details-section li {
+  margin-bottom: 10px; /* Space between list items */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between item and details */
+  padding: 10px 0; /* Vertical padding for each list item */
+  border-bottom: 1px solid #ddd; /* Border between items */
+}
+
+/* Total amount */
+.item-details-section .total-amount {
+  font-size: 18px; /* Font size for total amount */
+  font-weight: 600; /* Bolder text for emphasis */
+  color: #333; /* Darker text color */
+  margin-top: 20px; /* Space above total amount */
+}
+/* Form styling */
+.payment-method-section form {
+    background-color: #ffffff; /* White background for form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 20px; /* Space between form groups */
+  }
+  
+  .form-group label {
+    font-weight: bold; /* Bold labels for emphasis */
+    margin-bottom: 5px; /* Space below the label */
+    display: block; /* Display label as a block element */
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    color: #333; /* Darker text color */
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2); /* Subtle blue shadow */
+  }
+  
+  /* Credit card details styling */
+  .credit-card-details {
+    margin-top: 20px; /* Space above credit card details */
+  }
+  
+  .credit-card-details .form-group {
+    margin-bottom: 20px; /* Space between credit card details fields */
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px; /* Padding inside buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for buttons */
+    font-weight: bold; /* Bold text for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  button:hover {
+    opacity: 0.9; /* Slightly fade button on hover */
+  }
+  
+  /* Specific button colors */
+  .btn-primary {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d; /* Gray background */
+    color: #ffffff; /* White text */
+  }
+  

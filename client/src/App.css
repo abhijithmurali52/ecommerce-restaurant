@@ -1,0 +1,227 @@
+
+.navbar-blur {
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blurry effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Optional: adds a subtle border */
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Ensures the navbar is above other content */
+}
+
+@keyframes moveRight {
+  0% { left: 0; }
+  100% { left: calc(100% - 150px); }
+}
+.nav-link {
+  color: #000 !important; /* Make sure the color is black */
+  margin: 0 10px;
+  text-decoration: none;
+  background-color: #d3d3d3;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.page-header {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+/* Login.css */
+
+.login-container-unique {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container-unique h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form-group-unique {
+  margin-bottom: 15px;
+}
+
+.login-form-group-unique label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form-group-unique input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.login-button-unique {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button-unique:hover {
+  background-color: #0056b3;
+}
+/* Register.css */
+
+.register-container-unique {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container-unique h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-form-group-unique {
+  margin-bottom: 15px;
+}
+
+.register-form-group-unique label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.register-form-group-unique input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.register-button-unique {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-button-unique:hover {
+  background-color: #0056b3;
+}
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.user-info-box {
+  display: flex;
+  align-items: center;
+  background-color: #444;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logout-button svg {
+  margin-right: 5px;
+}
+.login-admin-box {
+  background-color: #555;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 15px; /* Adjust margin as needed */
+}
+
+.login-admin-box a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* App.css */
+
+.page-transition {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
