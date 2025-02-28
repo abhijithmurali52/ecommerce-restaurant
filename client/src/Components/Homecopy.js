@@ -270,7 +270,7 @@ function Home() {
                           }}
                         >
                           <p style={{ fontSize: "80px", color: "white" }}>
-                            Ashraf's Kitchen
+                            Restaurant
                           </p>
                         </span>
                         <h1 style={{ fontFamily: "'Dancing Script', cursive" }}>
